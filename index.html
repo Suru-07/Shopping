@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>SoleVibe✨</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#" id="cart-button">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Exclusive Sneakers Collection</h2>
+            <p>Find the best styles with comfort and durability.</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="sneaker-container">
+            <img src="images/floating.jpg" alt="Floating Sneaker" class="sneaker">
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="products">
+        <h2>Our Collection</h2>
+        <div class="product-grid">
+            <div class="product" data-name="Air Max" data-price="120">
+                <img src="images/float.jpg" alt="Shoe 1">
+                <h3>Air Jordan 1</h3>
+                <p>Rs 3500</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Jordan X" data-price="150">
+                <img src="images/pumashoe.jpeg" alt="Shoe 2">
+                <h3>Puma</h3>
+                <p>Rs 4000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Adidas UltraBoost" data-price="140">
+                <img src="images/newbalance.webp" alt="Shoe 3">
+                <h3>New Balance</h3>
+                <p>Rs 4400</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Puma RS-X" data-price="110">
+                <img src="images/Adidas Samba.jpg" alt="Shoe 4">
+                <h3>Adidas Samba</h3>X</h3>
+                <p>Rs 3800</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+   <!-- Shopping Cart -->
+   <div class="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: Rs<span id="cart-total">0</span></p>
+    <button id="checkout">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
